@@ -1,0 +1,97 @@
+/* import only the necessary Bootstrap files */
+
+@import "../bootstrap/scss/functions"; 
+@import "../bootstrap/scss/variables";
+
+/* -------begin customization-------- */
+
+// Add Roboto Mono and Roboto at top of default font stacks
+
+$font-family-sans-serif:      Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-monospace;
+
+// Change base font size. All other elements use rems.
+
+$font-size-override:          18px;
+
+html, body {
+    font-size: $font-size-override;
+}
+
+// Change font weights
+$headings-font-weight:        600;
+$font-weight-bold:            600;
+
+// Change heading font sizes
+
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+// Line height
+
+// Use Roboto Mono everywhere
+
+body {
+    font-family: $font-family-base;
+}
+
+// Colours
+
+$theme-colors: (
+  "primary": #f9db07,
+  "secondary": #35a8df,
+  "yellow": #f9db07,
+  "blue": #35a8df,
+  "teal": #35e1c9,
+  "pink": #da5398
+);
+
+// Link styling
+
+.content {
+    a {
+        color: $black;
+        text-decoration: underline;
+    } 
+    a:hover {
+        color: theme-color("teal");
+    }
+
+    ul {
+        list-style-type: none;
+        margin-left: -1rem;
+    }
+
+    li:before {
+        content: "+";
+        margin-right: 0.5rem;
+    }
+}
+
+
+
+// List styles
+
+
+
+// Change rounded style
+
+$enable-rounded:                              false;
+
+// Remove borders on elements
+
+.card,
+.card-header {
+    border: unset !important;
+}
+
+/* -------end customization-------- */
+
+/* finally, import Bootstrap to set the changes! */
+
+@import "../bootstrap/scss/bootstrap";
