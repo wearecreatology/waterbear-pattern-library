@@ -13,11 +13,15 @@ $font-family-base:            $font-family-monospace;
 
 // Change base font size. All other elements use rems.
 
-$font-size-override:          18px;
+/*** Actually, fuck that, it is 16px...
+
+$font-size-override:          18px; 
 
 html, body {
     font-size: $font-size-override;
 }
+
+***/
 
 // Change font weights
 $headings-font-weight:        600;
@@ -88,6 +92,34 @@ $enable-rounded:                              false;
 .card,
 .card-header {
     border: unset !important;
+}
+
+/*** Custom Components ***/
+
+.cta-box {
+    position: relative;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.cta-box button,
+.cta-box a {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 1rem;
+}
+
+.cta-box--basic a {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .cta-box--fullwidth {
+        height: 454px;
+    }
+
 }
 
 /* -------end customization-------- */

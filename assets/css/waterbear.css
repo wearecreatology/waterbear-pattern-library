@@ -1,8 +1,14 @@
 /* import only the necessary Bootstrap files */
 /* -------begin customization-------- */
-html, body {
-  font-size: 18px; }
+/*** Actually, fuck that, it is 16px...
 
+$font-size-override:          18px; 
+
+html, body {
+    font-size: $font-size-override;
+}
+
+***/
 body {
   font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
@@ -24,6 +30,26 @@ body {
 .card,
 .card-header {
   border: unset !important; }
+
+/*** Custom Components ***/
+.cta-box {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.cta-box button,
+.cta-box a {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 1rem; }
+
+.cta-box--basic a {
+  text-decoration: underline; }
+
+@media only screen and (max-width: 767px) {
+  .cta-box--fullwidth {
+    height: 454px; } }
 
 /* -------end customization-------- */
 /* finally, import Bootstrap to set the changes! */
