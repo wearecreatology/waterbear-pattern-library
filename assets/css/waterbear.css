@@ -32,24 +32,84 @@ body {
   border: unset !important; }
 
 /*** Custom Components ***/
-.cta-box {
+.cta-box, .cta-box--generic {
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
 
-.cta-box button,
-.cta-box a {
+.cta-box--generic {
+  padding: 15px !important; }
+
+.cta-box--square {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  background-color: #555; }
+
+.cta-box--square-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px; }
+
+.cta-box button, .cta-box--generic button,
+.cta-box a,
+.cta-box--generic a {
   position: absolute;
   bottom: 2.5rem;
   right: 1rem; }
 
-.cta-box--basic a {
-  text-decoration: underline; }
+.cta-box--generic a {
+  text-decoration: underline;
+  color: #fff; }
 
 @media only screen and (max-width: 767px) {
   .cta-box--fullwidth {
     height: 454px; } }
+
+/*** Colour Overlays ***/
+.colour-overlay:before, .colour-overlay--primary:before, .colour-overlay--secondary:before, .colour-overlay--teal:before, .colour-overlay--pink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.colour-overlay--primary:before {
+  background: rgba(250, 220, 8, 0.5); }
+
+.colour-overlay--secondary:before {
+  background: rgba(53, 168, 223, 0.5); }
+
+.colour-overlay--teal:before {
+  background: rgba(53, 225, 201, 0.5); }
+
+.colour-overlay--pink:before {
+  background: rgba(218, 83, 152, 0.5); }
+
+/* Multiply versions for modern browsers */
+.multiply, .multiply-primary, .multiply-secondary, .multiply-teal, .multiply-pink {
+  background-blend-mode: multiply; }
+
+.multiply-black {
+  background-color: rgba(0, 0, 0, 0.7) !important; }
+
+.multiply-primary {
+  background-color: #f9db07 !important; }
+
+.multiply-secondary {
+  background-color: #35a8df !important; }
+
+.multiply-teal {
+  background-color: #35e1c9 !important; }
+
+.multiply-pink {
+  background-color: #da5398 !important; }
 
 /* -------end customization-------- */
 /* finally, import Bootstrap to set the changes! */
