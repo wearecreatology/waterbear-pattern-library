@@ -39,6 +39,8 @@ body {
   background-size: cover; }
 
 .cta-box--generic {
+  min-height: 250px;
+  margin-bottom: 30px;
   padding: 15px !important; }
 
 .cta-box--square {
@@ -48,7 +50,8 @@ body {
   position: relative;
   background-color: #555; }
 
-.cta-box--square-content {
+.cta-box--square-content,
+.cta-box--generic-content {
   position: absolute;
   top: 0;
   bottom: 0;

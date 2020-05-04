@@ -105,6 +105,8 @@ $enable-rounded:                              false;
 
 .cta-box--generic {
     @extend .cta-box;
+    min-height: 250px;
+    margin-bottom: 30px;
     padding: 15px !important;
 }
 
@@ -116,7 +118,8 @@ $enable-rounded:                              false;
   background-color: #555;
 }
 
-.cta-box--square-content {
+.cta-box--square-content,
+.cta-box--generic-content {
     position: absolute;
     top: 0;
     bottom: 0;
