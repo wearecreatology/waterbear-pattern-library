@@ -40,8 +40,7 @@ body {
 
 .cta-box--generic {
   min-height: 250px;
-  margin-bottom: 30px;
-  padding: 15px !important; }
+  margin-bottom: 30px; }
 
 .cta-box--square {
   width: 100%;
@@ -57,7 +56,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  padding: 30px; }
+  padding: 1rem; }
 
 .cta-box button, .cta-box--generic button,
 .cta-box a,
