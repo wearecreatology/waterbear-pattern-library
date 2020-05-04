@@ -44,6 +44,7 @@ body {
 .cta-box--square {
   width: 100%;
   padding-bottom: 100%;
+  margin-bottom: 30px;
   position: relative;
   background-color: #555; }
 
@@ -53,7 +54,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  padding: 15px; }
+  padding: 30px; }
 
 .cta-box button, .cta-box--generic button,
 .cta-box a,
@@ -62,9 +63,12 @@ body {
   bottom: 2.5rem;
   right: 1rem; }
 
-.cta-box--generic a {
-  text-decoration: underline;
-  color: #fff; }
+.cta-box--square a {
+  right: 1.5rem; }
+
+.cta-box a:not(.btn), .cta-box--generic a:not(.btn) {
+  color: #fff;
+  text-decoration: underline; }
 
 @media only screen and (max-width: 767px) {
   .cta-box--fullwidth {
@@ -93,7 +97,7 @@ body {
   background: rgba(218, 83, 152, 0.5); }
 
 /* Multiply versions for modern browsers */
-.multiply, .multiply-primary, .multiply-secondary, .multiply-teal, .multiply-pink {
+.multiply, .multiply-black, .multiply-primary, .multiply-secondary, .multiply-teal, .multiply-pink {
   background-blend-mode: multiply; }
 
 .multiply-black {
