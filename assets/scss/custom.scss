@@ -55,9 +55,34 @@ $theme-colors: (
   "pink": #da5398
 );
 
-// Link styling
+// Background colours
+
+.bg-primary {
+    background-color: #f9db07;
+}
+
+.bg-secondary {
+    background-color: #35a8df;
+}
+
+.bg-teal {
+    background-color: #35e1c9;
+}
+
+.bg-pink {
+    background-color: #da5398;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+/* Text formatting overrides */
 
 .content {
+
+    // Link styling
+
     a {
         color: $black;
         text-decoration: underline;
@@ -65,6 +90,8 @@ $theme-colors: (
     a:hover {
         color: theme-color("teal");
     }
+
+    // List styles
 
     ul {
         list-style-type: none;
@@ -77,15 +104,40 @@ $theme-colors: (
     }
 }
 
+.lead {
+    font-weight: 600 !important;
+}
 
+/*** Footer ***/
 
-// List styles
+.tartigrade {
 
+    height: 600px;
+    width: 100%;
+
+    @media screen and (min-width: 992px) {
+        height: 400px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-left: -2.5rem;
+    }
+
+    h3, p, li {
+        margin-bottom: 1.5rem;
+    }
+
+    li:before {
+        content: "+";
+        margin-right: 3rem;
+    }
+}
 
 
 // Change rounded style
 
-$enable-rounded:                              false;
+$enable-rounded: false;
 
 // Remove borders on elements
 
@@ -95,6 +147,46 @@ $enable-rounded:                              false;
 }
 
 /*** Custom Components ***/
+
+/* Navigation */
+
+@media screen and (max-width: 991px) {
+
+    .nav-buttons {
+        display: block;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    .nav-buttons .btn {
+        width: 134px;
+    }
+
+    .nav-buttons .btn-secondary {
+        float: right;
+    }
+}
+@media screen and (min-width: 992px) {
+    .nav-buttons {
+        float: right;
+    }
+
+    .nav-buttons a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .nav-buttons .btn {
+        width: 134px;
+    }
+
+    .nav-buttons .btn-secondary {
+        clear: both;
+        float: unset;
+    }
+}
+
+/* CTA boxes */
 
 .cta-box {
     position: relative;

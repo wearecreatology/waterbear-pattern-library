@@ -12,6 +12,22 @@ html, body {
 body {
   font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
+.bg-primary {
+  background-color: #f9db07; }
+
+.bg-secondary {
+  background-color: #35a8df; }
+
+.bg-teal {
+  background-color: #35e1c9; }
+
+.bg-pink {
+  background-color: #da5398; }
+
+.bg-black {
+  background-color: #000; }
+
+/* Text formatting overrides */
 .content a {
   color: #000;
   text-decoration: underline; }
@@ -27,11 +43,54 @@ body {
   content: "+";
   margin-right: 0.5rem; }
 
+.lead {
+  font-weight: 600 !important; }
+
+/*** Footer ***/
+.tartigrade {
+  height: 600px;
+  width: 100%; }
+  @media screen and (min-width: 992px) {
+    .tartigrade {
+      height: 400px; } }
+  .tartigrade ul {
+    list-style-type: none;
+    margin-left: -2.5rem; }
+  .tartigrade h3, .tartigrade p, .tartigrade li {
+    margin-bottom: 1.5rem; }
+  .tartigrade li:before {
+    content: "+";
+    margin-right: 3rem; }
+
 .card,
 .card-header {
   border: unset !important; }
 
 /*** Custom Components ***/
+/* Navigation */
+@media screen and (max-width: 991px) {
+  .nav-buttons {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em; }
+  .nav-buttons .btn {
+    width: 134px; }
+  .nav-buttons .btn-secondary {
+    float: right; } }
+
+@media screen and (min-width: 992px) {
+  .nav-buttons {
+    float: right; }
+  .nav-buttons a {
+    display: block;
+    margin: 0.5em 0; }
+  .nav-buttons .btn {
+    width: 134px; }
+  .nav-buttons .btn-secondary {
+    clear: both;
+    float: unset; } }
+
+/* CTA boxes */
 .cta-box, .cta-box--generic {
   position: relative;
   background-repeat: no-repeat;
