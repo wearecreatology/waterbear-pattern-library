@@ -134,6 +134,55 @@ $theme-colors: (
     }
 }
 
+footer {
+    background-color: #000;
+    font-size: 0.9rem;
+}
+
+footer {
+    .waterbear-logo {
+        width: 150px;
+    }
+
+    address {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: #fff;
+        &:hover {
+            color: $teal;
+        }
+    }
+}
+
+.footer-menu {
+        list-style-type: none;
+        margin-left: -2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    li {
+        margin-bottom: .75rem;
+    }
+    li:before {
+        content: "+";
+        margin-right: 0.5rem;
+    }
+
+.footer-social-links--container {
+    display: block;
+}
+
+.footer-social-links {
+    list-style-type: none;
+
+    li {
+        display: inline;
+        float: left;
+        margin-right: 1rem;
+    }
+}
 
 // Change rounded style
 
@@ -148,6 +197,29 @@ $enable-rounded: false;
 
 /*** Custom Components ***/
 
+/* Brand Logos */
+
+#site-logo,
+footer .waterbear-logo {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    #site-logo,
+    footer .waterbear-logo {
+        width: 187px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #site-logo,
+    footer .waterbear-logo {
+        width: 227px;
+    }
+}
+
 /* Navigation */
 
 @media screen and (max-width: 991px) {
@@ -156,10 +228,12 @@ $enable-rounded: false;
         display: block;
         width: 100%;
         margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        
     }
 
     .nav-buttons .btn {
-        width: 134px;
+        width: 130px;
     }
 
     .nav-buttons .btn-secondary {
@@ -167,6 +241,15 @@ $enable-rounded: false;
     }
 }
 @media screen and (min-width: 992px) {
+    
+    .navbar {
+        height: 135px;
+    }
+
+    .navbar-nav {
+        font-size: 0.9rem;
+    }
+
     .nav-buttons {
         float: right;
     }
@@ -177,14 +260,26 @@ $enable-rounded: false;
     }
 
     .nav-buttons .btn {
-        width: 134px;
+        width: 130px;
+        font-size: 0.9rem;
     }
 
     .nav-buttons .btn-secondary {
         clear: both;
         float: unset;
     }
+    
 }
+
+/* Dropdown colouring */
+
+$dropdown-bg:                       $dark;
+$dropdown-link-color:               $light;
+$navbar-dark-color:                 rgba($white, 1);
+$navbar-dark-hover-color:           $teal;
+$navbar-dark-active-color:          $teal;
+
+$navbar-nav-link-padding-x:         .75rem;
 
 /* CTA boxes */
 
