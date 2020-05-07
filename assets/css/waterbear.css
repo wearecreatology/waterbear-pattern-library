@@ -28,6 +28,9 @@ body {
   background-color: #000; }
 
 /* Text formatting overrides */
+a:hover {
+  transition: all 0.15s ease-in-out; }
+
 .content a {
   color: #000;
   text-decoration: underline; }
@@ -48,11 +51,19 @@ body {
 
 /*** Footer ***/
 .tartigrade {
-  height: 600px;
-  width: 100%; }
+  height: 510px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/tardigrade_Portrait_SH.png"); }
+  @media screen and (min-width: 768px) {
+    .tartigrade {
+      height: 473px;
+      background-image: url("../images/tardigrade_landscape_SH.png"); } }
   @media screen and (min-width: 992px) {
     .tartigrade {
-      height: 400px; } }
+      height: 679px; } }
   .tartigrade ul {
     list-style-type: none;
     margin-left: -2.5rem; }
@@ -81,23 +92,34 @@ footer a {
   list-style-type: none;
   margin-left: -2.5rem;
   margin-bottom: 2.5rem; }
-
-li {
-  margin-bottom: .75rem; }
-
-li:before {
-  content: "+";
-  margin-right: 0.5rem; }
+  .footer-menu li {
+    margin-bottom: .75rem; }
+  .footer-menu li:before {
+    content: "+";
+    margin-right: 0.5rem; }
 
 .footer-social-links--container {
   display: block; }
 
 .footer-social-links {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: -2.5rem; }
   .footer-social-links li {
     display: inline;
     float: left;
     margin-right: 1rem; }
+  .footer-social-links a {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%; }
+    .footer-social-links a:hover {
+      color: #35e1c9;
+      transition: 0.3s; }
+  .footer-social-links i {
+    margin: 0.65em 0.55em; }
 
 .card,
 .card-header {
