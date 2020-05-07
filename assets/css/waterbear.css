@@ -51,8 +51,10 @@ a:hover {
 
 /*** Footer ***/
 .tartigrade {
-  height: 510px;
   width: 100%;
+  height: 510px;
+  /* fallback */
+  height: calc(100vw * 1.44);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -60,18 +62,25 @@ a:hover {
   @media screen and (min-width: 768px) {
     .tartigrade {
       height: 473px;
+      /* fallback */
+      height: calc(100vw * .53);
       background-image: url("../images/tardigrade_landscape_SH.png"); } }
   @media screen and (min-width: 992px) {
     .tartigrade {
-      height: 679px; } }
+      height: 679px;
+      /* fallback */
+      height: calc(100vw * .53); } }
   .tartigrade ul {
     list-style-type: none;
     margin-left: -2.5rem; }
+  .tartigrade li {
+    margin-left: 2rem; }
   .tartigrade h3, .tartigrade p, .tartigrade li {
     margin-bottom: 1.5rem; }
   .tartigrade li:before {
     content: "+";
-    margin-right: 3rem; }
+    margin-left: -2rem;
+    padding-right: 1.5rem; }
 
 footer {
   background-color: #000;
@@ -116,7 +125,6 @@ footer a {
     margin-right: 1rem; }
     @media screen and (max-width: 767px) {
       .footer-social-links li {
-        margin-right: 30%;
         margin-bottom: 1rem; } }
   .footer-social-links a {
     display: inline-block;
@@ -154,10 +162,14 @@ footer .waterbear-logo {
     width: 227px; } }
 
 .falmouth-university-logo {
-  width: 227px;
+  width: 100%;
   height: auto;
   display: block;
-  padding-top: 3px; }
+  padding-top: 3px;
+  margin-top: -15px; }
+  @media screen and (min-width: 992px) {
+    .falmouth-university-logo {
+      width: 227px; } }
 
 /* Navigation */
 @media screen and (max-width: 991px) {
