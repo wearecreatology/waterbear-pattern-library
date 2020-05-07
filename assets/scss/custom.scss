@@ -350,6 +350,16 @@ $navbar-dark-active-color:          $teal;
 
 $navbar-nav-link-padding-x:         .75rem;
 
+/* Background images */
+
+.has-bg-img {
+    position: relative;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
 /* CTA boxes */
 
 .cta-box {

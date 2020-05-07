@@ -201,6 +201,13 @@ footer .waterbear-logo {
     float: unset; } }
 
 /* Dropdown colouring */
+/* Background images */
+.has-bg-img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 /* CTA boxes */
 .cta-box, .cta-box--generic {
   position: relative;
