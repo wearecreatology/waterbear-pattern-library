@@ -42,7 +42,7 @@ a:hover {
   list-style-type: none;
   margin-left: -1rem; }
 
-.content li:before {
+.content ul li:before {
   content: "+";
   margin-right: 0.5rem; }
 
