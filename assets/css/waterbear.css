@@ -188,6 +188,10 @@ footer .partnership-text {
       width: 203px; } }
 
 /* Navigation */
+.navbar-dark .navbar-toggler {
+  border: none;
+  outline: none; }
+
 @media screen and (max-width: 991px) {
   .nav-buttons {
     display: block;
