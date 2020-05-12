@@ -83,11 +83,7 @@ a:hover {
     padding-right: 1.5rem; }
 
 footer {
-  background-color: #000;
-  font-size: 0.9rem; }
-
-footer .waterbear-logo {
-  width: 150px; }
+  background-color: #000; }
 
 footer address {
   margin-bottom: 0; }
@@ -155,28 +151,41 @@ footer a {
 
 /*** Custom Components ***/
 /* Brand Logos */
-#site-logo {
-  width: 130px;
-  height: auto;
+footer .waterbear-logo,
+footer .falmouth-university-logo {
+  max-width: 100%;
   display: block; }
 
+footer .partnership-text {
+  font-size: .7rem;
+  margin-top: -5px; }
+
 @media screen and (min-width: 768px) {
-  #site-logo {
-    width: 187px; } }
+  footer .partnership-text {
+    font-size: .9rem; } }
 
 @media screen and (min-width: 992px) {
-  #site-logo {
-    width: 227px; } }
+  footer .waterbear-logo {
+    width: 206px; }
+  footer .falmouth-university-logo {
+    width: 203px; }
+  footer .partnership-text {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1200px) {
+  footer .falmouth-university-logo,
+  footer .partnership-text {
+    margin-left: -2rem; } }
 
 .falmouth-university-logo {
-  width: 100%;
-  height: auto;
-  display: block;
+  /*width: 100%;
+    height: auto;
+    display: block;*/
   padding-top: 3px;
   margin-top: -15px; }
   @media screen and (min-width: 992px) {
     .falmouth-university-logo {
-      width: 227px; } }
+      width: 203px; } }
 
 /* Navigation */
 @media screen and (max-width: 991px) {
