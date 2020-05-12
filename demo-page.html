@@ -9,6 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet"> 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/waterbear.css" media="screen">
+
+    <style>
+        #hero-101 {
+            background-image: url("./assets/images/homepage-header-mobile-test.jpg");
+        }
+
+            @media screen and (min-width: 768px) {
+                #hero-101 {
+                    background-image: url("./assets/images/homepage-header-tablet-test.jpg");
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                #hero-101 {
+                    background-image: url("./assets/images/homepage-header-test.jpg");
+                }
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -73,7 +93,7 @@
         
         <!-- Hero -->
 
-        <div class="jumbotron jumbotron-fluid has-bg-img" style="background-image: url(./assets/images/homepage-header-test.jpg);">
+        <div id="hero-101" class="jumbotron jumbotron-fluid hero has-bg-img">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-6 col-lg-4 offset lg-8 text-right">

@@ -224,6 +224,13 @@ footer .partnership-text {
   background-position: center center;
   background-size: cover; }
 
+/* Hero banners */
+.hero {
+  min-height: 384px; }
+  @media screen and (min-width: 768px) {
+    .hero {
+      min-height: 326px; } }
+
 /* CTA boxes */
 .cta-box, .cta-box--generic {
   position: relative;

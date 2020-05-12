@@ -390,6 +390,16 @@ $navbar-nav-link-padding-x:         .75rem;
     background-size: cover;
 }
 
+/* Hero banners */
+
+.hero {
+    min-height: 384px;
+
+    @media screen and (min-width: 768px) {
+        min-height: 326px;
+    }
+}
+
 
 /* CTA boxes */
 
