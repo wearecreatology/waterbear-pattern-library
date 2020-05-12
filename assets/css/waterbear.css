@@ -143,22 +143,29 @@ footer a {
 .card-header {
   border: unset !important; }
 
+.navbar-brand {
+  min-width: 130px;
+  width: 40%; }
+  @media screen and (min-width: 768px) {
+    .navbar-brand {
+      width: 25%; } }
+  @media screen and (min-width: 992px) {
+    .navbar-brand {
+      width: 227px; } }
+
 /*** Custom Components ***/
 /* Brand Logos */
-#site-logo,
-footer .waterbear-logo {
+#site-logo {
   width: 130px;
   height: auto;
   display: block; }
 
 @media screen and (min-width: 768px) {
-  #site-logo,
-  footer .waterbear-logo {
+  #site-logo {
     width: 187px; } }
 
 @media screen and (min-width: 992px) {
-  #site-logo,
-  footer .waterbear-logo {
+  #site-logo {
     width: 227px; } }
 
 .falmouth-university-logo {

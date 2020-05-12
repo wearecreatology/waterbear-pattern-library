@@ -252,12 +252,28 @@ $enable-rounded: false;
     border: unset !important;
 }
 
+// Make Navbar Logo scalable 
+
+.navbar-brand {
+    min-width: 130px;
+    width: 40%;
+
+    @media screen and (min-width: 768px) {
+        width: 25%;
+    }
+
+    @media screen and (min-width: 992px) {
+        width: 227px;
+    }
+}
+
 /*** Custom Components ***/
 
 /* Brand Logos */
 
 #site-logo,
-footer .waterbear-logo {
+//footer .waterbear-logo 
+{
     width: 130px;
     height: auto;
     display: block;
@@ -265,14 +281,16 @@ footer .waterbear-logo {
 
 @media screen and (min-width: 768px) {
     #site-logo,
-    footer .waterbear-logo {
+    //footer .waterbear-logo 
+    {
         width: 187px;
     }
 }
 
 @media screen and (min-width: 992px) {
     #site-logo,
-    footer .waterbear-logo {
+    //footer .waterbear-logo 
+    {
         width: 227px;
     }
 }
