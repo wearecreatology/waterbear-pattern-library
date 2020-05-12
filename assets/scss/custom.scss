@@ -97,15 +97,37 @@ a:hover {
 
     // List styles
 
+    /*ul {
+        list-style-type: none;
+        margin-left: -1.75rem;
+    }
+
+    li {
+        margin-right: 1.75rem; 
+    }
+    ul li:before {
+        content: "+";
+        margin-right: 1rem;
+    }
+
+    */
+
     ul {
         list-style-type: none;
-        margin-left: -1rem;
+        margin-left: -2.1rem;
+    }
+
+    ul li {
+        margin-left: 2rem;
     }
 
     ul li:before {
         content: "+";
-        margin-right: 0.5rem;
+        //margin-right: 3rem;
+        margin-left: -1.5rem;
+        padding-right: 1rem;
     }
+
 }
 
 .lead {
