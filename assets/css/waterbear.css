@@ -217,6 +217,10 @@ footer .partnership-text {
     float: unset; } }
 
 /* Dropdown colouring */
+.nav-item .dropdown-menu {
+  background-color: #20c997;
+  transition: .2s; }
+
 /* Background images */
 .has-bg-img {
   position: relative;
@@ -2950,15 +2954,15 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #f8f9fa;
+  color: #fff;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
+    color: #20c997;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #fff; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -2982,7 +2986,7 @@ input[type="button"].btn-block {
 .dropdown-item-text {
   display: block;
   padding: 0.25rem 1.5rem;
-  color: #f8f9fa; }
+  color: #fff; }
 
 .btn-group,
 .btn-group-vertical {

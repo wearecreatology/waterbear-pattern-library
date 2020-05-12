@@ -381,6 +381,15 @@ $navbar-dark-active-color:          $teal;
 
 $navbar-nav-link-padding-x:         .75rem;
 
+$dropdown-link-color:               $white;
+$dropdown-link-hover-color:         $teal;
+$dropdown-link-hover-bg:            $white;
+
+.nav-item .dropdown-menu {
+    background-color: $teal;
+    transition: .2s;
+}
+
 /* Background images */
 
 .has-bg-img {
