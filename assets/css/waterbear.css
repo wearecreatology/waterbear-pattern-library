@@ -73,19 +73,19 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/tardigrade-portrait-mobile.png"); }
+  background-image: url("../images/tinified/tardigrade-portrait-mobile-larger.png"); }
   @media screen and (min-width: 768px) {
     .tardigrade {
       height: 473px;
       /* fallback */
       height: calc(100vw * .53);
-      background-image: url("../images/tardigrade-landscape-tablet.png"); } }
+      background-image: url("../images/tinified/tardigrade-landscape-tablet.png"); } }
   @media screen and (min-width: 992px) {
     .tardigrade {
       height: 679px;
       /* fallback */
       height: calc(100vw * .53);
-      background-image: url("../images/tardigrade-landscape-desktop.png"); } }
+      background-image: url("../images/tinified/tardigrade-landscape-desktop.png"); } }
   .tardigrade ul {
     list-style-type: none;
     margin-left: -2.5rem; }
