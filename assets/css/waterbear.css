@@ -65,7 +65,7 @@ a:hover {
   font-weight: 600 !important; }
 
 /*** Footer ***/
-.tartigrade {
+.tardigrade {
   width: 100%;
   height: 510px;
   /* fallback */
@@ -73,26 +73,27 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/tardigrade_Portrait_SH.png"); }
+  background-image: url("../images/tardigrade-portrait-mobile.png"); }
   @media screen and (min-width: 768px) {
-    .tartigrade {
+    .tardigrade {
       height: 473px;
       /* fallback */
       height: calc(100vw * .53);
-      background-image: url("../images/tardigrade_landscape_SH.png"); } }
+      background-image: url("../images/tardigrade-landscape-tablet.png"); } }
   @media screen and (min-width: 992px) {
-    .tartigrade {
+    .tardigrade {
       height: 679px;
       /* fallback */
-      height: calc(100vw * .53); } }
-  .tartigrade ul {
+      height: calc(100vw * .53);
+      background-image: url("../images/tardigrade-landscape-desktop.png"); } }
+  .tardigrade ul {
     list-style-type: none;
     margin-left: -2.5rem; }
-  .tartigrade li {
+  .tardigrade li {
     margin-left: 2rem; }
-  .tartigrade h3, .tartigrade p, .tartigrade li {
+  .tardigrade h3, .tardigrade p, .tardigrade li {
     margin-bottom: 1.5rem; }
-  .tartigrade li:before {
+  .tardigrade li:before {
     content: "+";
     margin-left: -2rem;
     padding-right: 1.5rem; }
